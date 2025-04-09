@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Načtení fiktivního datasetu
-@st.cache
+@st.cache_data
 def load_data():
     months = pd.date_range(start="2024-01-01", end="2025-03-01", freq="MS")
     branches = ["Praha", "Brno", "Ostrava", "Plzeň", "Hradec Králové"]
